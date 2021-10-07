@@ -17,8 +17,8 @@ public class DemoMobileApp {
 		File app = new File(appDir,"ApiDemos-debug.apk");
 		DesiredCapabilities cap = new DesiredCapabilities();
 		
-		//cap.setCapability(MobileCapabilityType.DEVICE_NAME, "TestEmulator");
-		cap.setCapability(MobileCapabilityType.DEVICE_NAME, "Pixel");
+		cap.setCapability(MobileCapabilityType.DEVICE_NAME, "TestEmulator");
+		//cap.setCapability(MobileCapabilityType.DEVICE_NAME, "Pixel");
 
 		cap.setCapability(MobileCapabilityType.APP, app.getAbsolutePath());
 		cap.setCapability(MobileCapabilityType.AUTOMATION_NAME, "uiautomator2");
